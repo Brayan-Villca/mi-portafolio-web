@@ -1,27 +1,22 @@
-// 📌 EDITA AQUÍ tus proyectos. Cada objeto es una tarjeta en la sección "Proyectos".
 export const projects = [
   {
     id: 'ctrlstock',
     name: 'CtrlStock',
     slogan: 'La solución que deja todo OK.',
-    description:
-      'Sistema profesional de gestión de inventarios desarrollado en Python.',
+    description:'Sistema profesional de gestión de inventarios desarrollado en Python.',
     technologies: ['Python', 'Tkinter', 'SQLite', 'Pandas', 'Matplotlib', 'ReportLab', 'Pillow'],
-    // TODO: reemplaza por una captura real de la app (ej: /assets/ctrlstock.png)
-    image: null,
-    githubUrl: '', // TODO: agrega el link a tu repo de GitHub
-    demoUrl: '', // TODO: agrega link de demo si existe
+    image: "src/assets/ctrlStock/inicio.jpg",
+    githubUrl: 'https://github.com/Brayan-Villca/CtrlStock',
+    demoUrl: 'https://github.com/Brayan-Villca/CtrlStock',
   },
   {
-    id: 'aventura-rpg',
-    name: 'Aventura RPG',
-    slogan: '',
-    description:
-      'Videojuego desarrollado con Pygame utilizando una arquitectura modular.',
-    technologies: ['Python', 'Pygame'],
-    image: null, // TODO: agrega captura del juego
-    githubUrl: '', // TODO: agrega el link a tu repo de GitHub
-    demoUrl: '',
+    id: 'campusapi',
+    name: 'Campus API',
+    slogan: 'El dominio del Campus en tus manos',
+    description:'CampusAPI es una API diseñado para administrar el ecosistema de una academia técnica. Permite gestionar instructores, estudiantes, cursos y su vinculación mediante matrículas.',
+    technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+    image: "src/assets/CampusAPI/CampusAPI.png",
+    githubUrl: 'https://github.com/Brayan-Villca/CampusAPI',
+    demoUrl: 'https://github.com/Brayan-Villca/CampusAPI',
   },
-  // TODO: agrega aquí más proyectos tuyos siguiendo la misma estructura
 ]

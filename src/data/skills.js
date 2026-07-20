@@ -8,7 +8,6 @@ export const skillGroups = [
       { name: 'Java', icon : 'FileCode1'},
       { name: 'C++', icon : 'FileCode2'},
       { name: 'Springboot', icon : 'Flame'},
-
     ],
   },
   {

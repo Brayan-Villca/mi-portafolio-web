@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { label } from 'framer-motion/client'
 
 const links = [
   { label: 'Sobre mí', href: '#sobre-mi' },
   { label: 'Linux', href: '#linux' },
   { label: 'Docencia', href: '#docencia' },
   { label: 'Proyectos', href: '#proyectos' },
+  { label: 'Juegos', href: '#juegos'},
   { label: 'Tecnologías', href: '#tecnologias' },
   { label: 'Contacto', href: '#contacto' },
 ]

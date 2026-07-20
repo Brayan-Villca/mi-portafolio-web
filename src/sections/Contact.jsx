@@ -6,7 +6,8 @@ import Button from '../components/ui/Button.jsx'
 import { fadeUp, staggerContainer } from '../hooks/useReveal.js'
 
 const socials = [
-  { label: 'GitHub', icon: Github, href: 'https://github.com/brayanvillca' },
+  { label: 'GitHub', icon: Github, href: 'https://github.com/Brayan-Villca' },
+  { label: 'GitHub Secundario', icon: Github, href: 'https://github.com/brayanvillca' },
   { label: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/brayan-herlan-villca/' },
   { label: 'Correo', icon: Mail, href: 'mailto:brayanvillca246@gmail.com' },
 ]
@@ -24,7 +25,7 @@ export default function Contact() {
         'service_y5z5u1s',
         'template_vrh6fi7',
         formRef.current,
-        'w9tDDHAIiTzTtOvT4k5OG'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       setStatus('sent')
       formRef.current.reset() // Limpia el formulario automáticamente

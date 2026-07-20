@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { Github, ExternalLink, ImageOff } from 'lucide-react'
-import { projects } from '../data/projects.js'
+import { hobbies } from '../data/hobbies.js'
 import { fadeUp, staggerContainer } from '../hooks/useReveal.js'
 
-export default function Projects() {
+export default function Hobbies() {
   return (
-    <section id="proyectos" className="section">
+    <section id="juegos" className="section">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -13,14 +13,14 @@ export default function Projects() {
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.span variants={fadeUp} className="eyebrow">
-          Proyectos
+          Proyectos por Hobby
         </motion.span>
         <motion.h2 variants={fadeUp} className="heading-md mt-3">
-          Cosas que he construido
+          Cosas que hice por diversion
         </motion.h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
+          {hobbies.map((project) => (
             <motion.article
               key={project.id}
               variants={fadeUp}
@@ -35,10 +35,8 @@ export default function Projects() {
                     className="h-full w-full object-cover"
                   />
                 ) : (
-                  // TODO: reemplaza este placeholder agregando una imagen real en src/data/projects.js
                   <div className="flex flex-col items-center gap-2 text-text-secondary/50">
                     <ImageOff size={28} aria-hidden="true" />
-                    <span className="text-xs">Agrega una captura en projects.js</span>
                   </div>
                 )}
               </div>
@@ -62,7 +60,6 @@ export default function Projects() {
                 </div>
 
                 <div className="mt-6 flex gap-3">
-                  {/* TODO: agrega el link real de GitHub en src/data/projects.js */}
                   <a
                     href={project.githubUrl || '#'}
                     target='_black'

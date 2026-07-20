@@ -7,6 +7,7 @@ import Teaching from './sections/Teaching.jsx'
 import Projects from './sections/Projects.jsx'
 import Skills from './sections/Skills.jsx'
 import Contact from './sections/Contact.jsx'
+import Hobbies from './sections/Hobbies.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Linux />
         <Teaching />
         <Projects />
+        <Hobbies />
         <Skills />
         <Contact />
       </main>
